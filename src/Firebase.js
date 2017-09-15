@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'
 
 // Initialize Firebase
-var config = {
+const config = {
   apiKey: 'AIzaSyCpQ5Ve8lRLOHzX_PaRI9QkbYBdTBhHHfA',
   authDomain: 'todo-list-4f52c.firebaseapp.com',
   databaseURL: 'https://todo-list-4f52c.firebaseio.com',
