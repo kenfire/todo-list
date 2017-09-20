@@ -8,6 +8,12 @@ export const addTodo = todo => {
   return dispatch => todoList.push({text: todo})
 }
 
+export const deleteTodo = key => {
+  // this will trigger fetchTodoList because of componentWillMount() from the TodoList container
+  console.log('key= ', key)
+  return dispatch => todoList.child(key).remove()
+}
+
 // Fetch from  Firebase database
 export const fetchTodoList = () => {
   return dispatch => {
