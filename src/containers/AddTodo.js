@@ -1,6 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
+import Button from 'material-ui/Button';
+import TextField from 'material-ui/TextField';
 
 class AddTodo extends React.Component {
   render () {
@@ -20,14 +22,14 @@ class AddTodo extends React.Component {
             }
           }
         >
-          <input
-            ref={node => {
+          <TextField
+            inputRef={node => {
               input = node
             }}
           />
-          <button type="submit">
+          <Button raised color="primary"  type="submit">
             Add Todo
-          </button>
+          </Button>
         </form>
       </div>
     )

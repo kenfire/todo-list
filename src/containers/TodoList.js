@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import _ from 'lodash'
 import Todo from '../components/Todo'
 import { deleteTodo, fetchTodoList } from '../actions'
+import Table from 'material-ui/Table'
 
 class TodoList extends Component {
   componentWillMount () {
@@ -17,9 +18,9 @@ class TodoList extends Component {
 
   render () {
     return (
-      <ul>
+      <Table>
         {this.renderTodoList()}
-      </ul>
+      </Table>
     )
   }
 }

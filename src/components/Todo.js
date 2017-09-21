@@ -1,11 +1,12 @@
 import React from 'react'
 import Button from 'material-ui/Button'
+import { TableCell, TableRow } from 'material-ui/Table'
 
 const Todo = ({text, onClick}) => (
-  <div>
-    <li> {text} </li>
-    <Button raised color="accent" onClick={onClick}>Delete</Button>
-  </div>
+  <TableRow>
+    <TableCell> {text} </TableCell>
+    <TableCell><Button raised color="accent" onClick={onClick}>Delete</Button></TableCell>
+  </TableRow>
 
 )
 
