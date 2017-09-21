@@ -10,7 +10,7 @@ export const addTodo = todo => {
 
 export const deleteTodo = key => {
   // this will trigger fetchTodoList because of componentWillMount() from the TodoList container
-  console.log('key= ', key)
+  console.log('key2= ', key)
   return dispatch => todoList.child(key).remove()
 }
 

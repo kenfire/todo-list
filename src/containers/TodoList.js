@@ -12,7 +12,7 @@ class TodoList extends Component {
   renderTodoList () {
     return _.map(this.props.todoList, (todo, key) => {
       console.log("key1=" ,key)
-      return <Todo key={key} id={key} todo={todo}{...todo} onClick={(key) => this.props.deleteTodo(key)}/>
+      return <Todo key={key} id={key} todo={todo}{...todo} onClick={() => this.props.deleteTodo(key)}/>
     })
   }
 
